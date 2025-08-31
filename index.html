@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/resetStyle.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/adaptive.css" />
+    <title>Site</title>
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#myServices" data-i18n="services" class="menu__link"
+                    >My services</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#myProjects" data-i18n="project" class="menu__link"
+                    >My Projects</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#contact" data-i18n="contact" class="menu__link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="lang-wrapper">
+            <button id="lang-toggle" class="lang-toggle-button">EN</button>
+            <div id="lang-menu" class="lang-menu hidden">
+              <ul>
+                <li data-lang="ua">UA</li>
+                <li data-lang="en">EN</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__contact">
+            <div data-i18n="number" class="header__text">My phone number</div>
+            +380 96 880 79 56
+          </div>
+
+          <button class="menu__button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__myServices myServices" id="myServices">
+          <div class="myServices__container">
+            <h2
+              class="myServices__title title animation"
+              data-i18n="servicesTitle"
+            >
+              My services
+            </h2>
+            <div class="myServices__content">
+              <div class="myServices__text animation">
+                <h3
+                  class="myServices-content__title"
+                  data-i18n="myServicesContentTitle1"
+                >
+                  I am preparing working documentation for the following
+                  sections:
+                </h3>
+
+                <ul class="myServices__list">
+                  <li class="myServices__item" data-i18n="myServicesItemText1">
+                    AR (architectural solutions);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText2">
+                    TX (technological solutions);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText3">
+                    GP (general plan);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText4">
+                    KM (metal structures);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText5">
+                    KB (reinforced concrete structures);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText6">
+                    VK(water supply, sewage);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText7">
+                    POB (construction organization plan);
+                  </li>
+                </ul>
+                <h3
+                  class="myServices-content__title"
+                  data-i18n="myServicesContentTitle2"
+                >
+                  I also perform fast and high-quality work on stage design:
+                </h3>
+                <ul class="myServices__list">
+                  <li
+                    class="myServices__item myServices__item-title"
+                    data-i18n="myServicesItemText8"
+                  >
+                    PP (preliminary design, construction concept):
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText9">
+                    EP (draft design);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText10">
+                    P (project);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText11">
+                    RP (working design);
+                  </li>
+                  <li class="myServices__item" data-i18n="myServicesItemText12">
+                    RD (working documentation).
+                  </li>
+                </ul>
+              </div>
+              <div class="myServices__image animation">
+                <img data-src="./img/Image2.jpg" alt="Image" class="lazy" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__myProjects myProjects" id="myProjects">
+          <div class="myProjects__container">
+            <h2
+              class="myProjects__title title animation"
+              data-i18n="projectsTitle"
+            >
+              My projects
+            </h2>
+            <div class="myProjects__items"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contact">
+        <div class="footer__container">
+          <h2 class="footer__title title">Contact</h2>
+          <div class="footer__numbers">My work numbers:</div>
+          <div class="footer__number-phone">+380 96 880 79 56</div>
+          <div class="footer__number-phone">+380 96 880 79 56</div>
+          <a href="mailto:example@gmail.com" class="footer__email"
+            >Write to the mail</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./script/script.js"></script>
+  </body>
+</html>
